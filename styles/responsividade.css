@@ -1,0 +1,179 @@
+@media (max-width:500px) {
+
+    .link_botoes {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .link_botoes_rede {
+        width: 2.813rem;
+        height: 2.813rem;
+    }
+
+    .slogan_cabecalho {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 1.25rem;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .painel_apresentacao {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+
+
+    }
+
+    .texto_apresentacao {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 400px;
+
+
+    }
+
+    .titulo_profissao {
+        font-size: 0.813rem;
+
+    }
+
+    .titulo_nome {
+        font-size: 2.313rem;
+        width: 18.125rem;
+        margin-right: 10px;
+    }
+
+    .texto {
+        font-size: 0.75rem;
+        width: 90%;
+    }
+
+    .painel {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        margin-left: 80px;
+        width: fit-content;
+
+
+    }
+
+    .imagem_profissional {
+        width: 16.25rem;
+    }
+
+    #sobre_mim {
+        display: flex;
+        flex-direction: column;
+        height: 700px;
+        width: 100%;
+
+    }
+
+    .titulo_sobre_mim {
+        font-size: 2.125rem;
+
+
+    }
+
+    .texto_sobre_mim {
+        font-size: 0.875rem;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+
+
+    #minhas_habilidades {
+        display: flex;
+        flex-direction: column;
+        width: 18.125rem;
+
+    }
+
+    .titulo_minhas_habilidades {
+        font-size: 2.125rem;
+    }
+
+
+    .soft_skills_div {
+        font-size: 0.625rem;
+    }
+
+
+
+
+    #meus_projetos {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+
+    }
+
+    .titulo_meus_projetos {
+        font-size: 2.125rem;
+    }
+
+    .titulo_projetos {
+        font-size: 1.25rem;
+    }
+
+    .texto_projetos {
+        display: flex;
+        flex-direction: column;
+        font-size: 0.875rem;
+        width: 100%;
+
+    }
+
+    .imagem_projetos {
+        width: 4.375rem;
+        height: 4.375rem;
+        margin-left: 190px;
+        margin-top: 18px;
+    }
+
+    .botao_projeto {
+        font-size: 0.875rem;
+    }
+
+    #rodape {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+
+    }
+
+
+    .contatos {
+        margin-bottom: 40px;
+    }
+
+
+    .titulo_contatos {
+        font-size: 2.125rem;
+    }
+
+    .texto_contatos {
+        font-size: 0.875rem;
+
+    }
+
+    .botoes_patrocinio {
+        width: 100%;
+    }
+
+    .patrocinado {
+        font-size: 0.875rem;
+
+    }
+
+}

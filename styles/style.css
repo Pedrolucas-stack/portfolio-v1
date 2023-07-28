@@ -1,0 +1,570 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krub:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
+
+:root {
+    --cor-primaria: #111010;
+    --cor-secundária: #FFFFFF;
+    --cor-terciária: #333333;
+    --cor-quartenária: #A9A9A9;
+    --font-primaria: 'Krona One';
+    --font-secundária: 'Krub';
+    --font-terciária: 'Roboto Condensed';
+    --font-quartenária: 'Inter';
+}
+
+
+@keyframes imagem {
+    from {
+        margin-left: 0px;
+    }
+
+    to {
+        margin-left: 0px;
+    }
+
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@keyframes profissao {
+    from {
+        margin-left: 0px;
+    }
+
+    to {
+        margin-left: 0px;
+    }
+
+    0% {
+        color: #111010;
+    }
+
+    50% {
+        color: #111010;
+    }
+
+    100% {
+        color: #FFFFFF;
+    }
+}
+
+@keyframes nome {
+    from {
+        margin-left: 300px;
+    }
+
+    to {
+        margin-left: 30px;
+    }
+
+    0% {
+        color: #111010;
+    }
+
+    50% {
+        color: #111010;
+    }
+
+    100% {
+        color: #FFFFFF;
+    }
+}
+
+@keyframes texto {
+    from {
+        margin-left: 300px;
+    }
+
+    to {
+        margin-left: 50px;
+    }
+
+    0% {
+        color: #111010;
+    }
+
+    50% {
+        color: #111010;
+    }
+
+    100% {
+        color: #FFFFFF;
+    }
+}
+
+@keyframes titulo {
+    from {
+        margin-left: 300px;
+    }
+
+    to {
+        margin-left: 30px;
+    }
+
+    0% {
+        color: #111010;
+    }
+
+    50% {
+        color: #111010;
+    }
+
+    100% {
+        color: #FFFFFF;
+    }
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundária);
+    padding: 25px;
+
+}
+
+.cabecalho {
+    width: 100%;
+
+}
+
+.main {
+    width: 100%;
+}
+
+
+/* botões do cabeçalho */
+.link_botoes {
+    display: flex;
+    gap: 28px;
+    animation: imagem 1.5s;
+    animation-duration: 2s;
+
+
+}
+
+.link_botoes_rede {
+    display: flex;
+    background-color: var(--cor-quartenária);
+    border-radius: 0.156rem;
+    transition-duration: 0.3s;
+    height: 3.125rem;
+    width: 3.125rem;
+
+
+
+
+}
+
+:hover.link_botoes_rede {
+    background-color: var(--cor-terciária);
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.1);
+
+}
+
+:active.link_botoes_rede {
+    background-color: var(--cor-primaria);
+
+}
+
+/* Slogan */
+.slogan_cabecalho {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 195px;
+    font-weight: 100;
+    font-size: 1.563rem;
+    font-family: var(--font-secundária);
+    font-family: var(--font-terciária);
+    animation: profissao 1.5s;
+    animation-duration: 2s;
+
+
+}
+
+/* texto principal*/
+.painel_apresentacao {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+.texto_apresentacao {
+    box-sizing: border-box;
+    margin-top: 100px;
+
+
+}
+
+.titulo_profissao {
+    display: flex;
+    width: 27.375rem;
+    flex-direction: column;
+    color: var(--cor-secundária);
+    font-family: var(--font-primaria);
+    font-size: 1rem;
+    font-weight: 500;
+    animation: profissao 1.5s;
+
+}
+
+
+.titulo_nome {
+    font-family: var(--font-secundária);
+    display: flex;
+    margin-left: 30px;
+    color: var(--cor-secundária);
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    animation: nome 1.5s;
+    animation-duration: 2s;
+
+}
+
+.texto {
+    margin-top: 10px;
+    display: flex;
+    margin-left: 50px;
+    flex-direction: column;
+    color: var(--cor-secundária);
+    font-family: var(--font-primaria);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 100;
+    animation: texto 1.5s;
+    animation-duration: 2.5s;
+    width: 900px;
+
+
+
+
+}
+
+/* Painel Profissional */
+.imagem_profissional {
+    box-sizing: border-box;
+    animation: imagem 1.5s;
+    animation-duration: 3.5s;
+    width: 17.938rem;
+
+
+}
+
+.painel {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 80px;
+    width: fit-content;
+    font-family: var(--font-primaria);
+    color: var(--cor-secundária);
+    font-size: 0.813rem;
+    font-style: normal;
+    font-weight: 400;
+
+}
+
+
+.painel_botoes {
+    text-decoration: none;
+    color: var(--cor-secundária);
+    animation: profissao 1.5s;
+    animation-duration: 2.5s;
+    width: fit-content;
+
+}
+
+:hover.painel_botoes {
+    background-color: var(--cor-terciária);
+    transition: all 0.2s ease-in-out;
+    font-size: 101%;
+
+}
+
+:active.painel_botoes {
+    background-color: var(--cor-primaria);
+
+}
+
+/* Sobre mim */
+#sobre_mim {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+    justify-content: center;
+
+}
+
+.titulo_sobre_mim {
+    color: var(--cor-secundária);
+    font-family: var(--font-secundária);
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    animation: titulo;
+    animation-duration: 1.5s;
+
+}
+
+.texto_sobre {
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+    gap: 30px;
+    width: auto;
+}
+
+.texto_sobre_mim {
+    color: var(--cor-secundária);
+    font-family: var(--font-secundária);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    animation: profissao 1.5s;
+    animation-duration: 2.0s;
+}
+
+.fonte_linkedin {
+    display: flex;
+    color: var(--cor-secundária);
+    font-family: var(--font-secundária);
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    text-transform: uppercase;
+    top: 50%;
+    animation: profissao 1.5s;
+    animation-duration: 3.0s;
+
+}
+
+/* Minhas Habilidades */
+#minhas_habilidades {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.titulo_minhas_habilidades {
+
+    flex-shrink: 0;
+    color: var(--cor-secundária);
+    font-family: var(--font-secundária);
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.soft_skills_div {
+    margin-top: 50px;
+}
+
+.soft_skills {
+
+    height: 30px;
+    flex-shrink: 0;
+    color: var(--cor-secundária);
+    font-family: var(--font-secundária);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+
+}
+
+.hard_skills_div {
+
+    margin-top: 20px;
+
+}
+
+.hard_skills {
+    height: 30px;
+    flex-shrink: 0;
+    color: var(--cor-secundária);
+    font-family: var(--font-secundária);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+/* Meus Projetos */
+#meus_projetos {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.titulo_meus_projetos {
+
+    color: var(--cor-secundária);
+    font-family: var(--font-secundária);
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.titulo_projetos {
+    margin-top: 30px;
+    color: var(--cor-secundária);
+    text-align: justify;
+    font-family: var(--font-quartenária);
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+
+}
+
+.texto_projetos {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 1000px;
+    color: var(--cor-secundária);
+    text-align: justify;
+    font-family: var(--font-quartenária);
+    font-size: 0.938rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+
+}
+
+.imagem_projetos {
+    display: flex;
+    flex-direction: row;
+    margin-left: 100px;
+    height: 7.5rem;
+    width: 7.5rem;
+}
+
+.botao_projeto {
+
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    width: fit-content;
+    color: var(--cor-secundária);
+    font-family: var(--font-quartenária);
+    font-size: 0.938rem;
+    font-style: normal;
+    font-weight: 400;
+
+}
+
+.botao_projeto:hover {
+    transition: all 0.3s;
+    font-size: 99%;
+    background-color: var(--cor-terciária);
+    border-radius: 5px;
+}
+
+:active.botao_projeto {
+    background-color: var(--cor-primaria);
+
+}
+
+.linha {
+    margin-top: 10px;
+}
+
+
+#rodape{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: end;
+}
+
+.contatos {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.titulo_contatos {
+
+    color: var(--cor-secundária);
+    font-family: var(--font-secundária);
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.texto_contatos {
+    margin-top: 30px;
+    color: var(--cor-secundária);
+    font-family: var(--font-secundária);
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+
+.botoes_patrocinio {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 25px;
+    margin-right: 100px;
+ 
+}
+
+.patrocinado {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 10px;
+    color: var(--cor-secundária);
+    font-family: var(--font-secundária);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
